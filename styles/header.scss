@@ -1,0 +1,47 @@
+header {
+  color: #fff;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    &__menu {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+      }
+    }
+    &__item {
+      margin-right: 30px;
+      text-transform: uppercase;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 2rem;
+
+        &:hover {
+          color: #c8a77b;
+        }
+      }
+    }
+    .logo-racoon {
+      max-width: 100px;
+      border-radius: 20px;
+      border: 2px solid #c8a77b;
+    }
+  }
+
+  .flex-custom {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container-fluid.header {
+  background-color: #000;
+  min-height: 100px;
+  padding: 10px 70px;
+}

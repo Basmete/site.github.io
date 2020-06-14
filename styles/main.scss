@@ -1,0 +1,90 @@
+@import "header.scss";
+@import "intro.scss";
+@import "about.scss";
+@import "footer.scss";
+@import "about-view.scss";
+
+$primaryDarkBlue: #06121d;
+$darkOrange: #f7941e;
+$darkGrey: #2a2e35;
+$darkGreyText: #33373e;
+$brown: #7c4409;
+$lightGrey: #e5e5e5;
+$inputTextColor: #919191;
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Oswald", "serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  label {
+    color: $inputTextColor;
+  }
+
+  input {
+    border: none;
+    background-color: $lightGrey;
+    outline: none;
+    padding: 5px 10px;
+    color: $inputTextColor;
+
+    &:focus {
+      border: 1px solid $darkOrange;
+    }
+  }
+}
+
+.btn {
+  border: 1px solid $lightGrey;
+  color: $darkGreyText;
+  background-color: $lightGrey;
+
+  &:hover {
+    color: $inputTextColor;
+    background-color: $darkGrey;
+  }
+}
+
+////////////////////@extend
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
