@@ -1,3 +1,7 @@
+.lul {
+  margin-bottom: 20px;
+}
+
 .about-me {
   padding: 50px 0;
   &__avatar {
@@ -12,7 +16,7 @@
   }
   &__left {
     border-right: 2px solid grey;
-    padding: 0 10px;
+    padding: 0 30px;
   }
   &__form {
     display: flex;
@@ -22,6 +26,7 @@
     p {
       font-weight: 200;
       font-size: 2rem;
+      text-align: center;
     }
   }
 }

@@ -20,6 +20,12 @@ footer {
       span {
         font-size: 2rem;
         margin: 0 15px;
+        i {
+          &:hover {
+            color: #c8a77b;
+            text-shadow: 1px 1px 2px black, 0 0 10px #1f1c1c;
+          }
+        }
       }
     }
   }

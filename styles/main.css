@@ -56,7 +56,7 @@ header .flex-custom {
 }
 
 .container-fluid.header {
-  background-color: #000;
+  background-color: #1f1c1c;
   min-height: 100px;
   padding: 10px 70px;
 }
@@ -68,6 +68,11 @@ header .flex-custom {
   background-color: #f2f2f2;
   height: 100%;
   padding: 20px;
+  font-size: 2rem;
+}
+.intro__left .desc {
+  text-align: center;
+  margin-bottom: 20px;
 }
 .intro__left .separator {
   border: 1px solid rgba(58, 50, 50, 0.336);
@@ -75,9 +80,10 @@ header .flex-custom {
 }
 .intro__skills p {
   position: relative;
-  font-weight: bold;
+  font-weight: 200;
   margin-bottom: 10px;
   padding-left: 30px;
+  color: rgba(48, 69, 92, 0.8);
 }
 .intro__skills p::before {
   position: absolute;
@@ -171,6 +177,14 @@ footer .footer__social-medias span {
   font-size: 2rem;
   margin: 0 15px;
 }
+footer .footer__social-medias span i:hover {
+  color: #c8a77b;
+  text-shadow: 1px 1px 2px black, 0 0 10px #1f1c1c;
+}
+
+.lul {
+  margin-bottom: 20px;
+}
 
 .about-me {
   padding: 50px 0;
@@ -187,7 +201,7 @@ footer .footer__social-medias span {
 }
 .about-me__left {
   border-right: 2px solid grey;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 .about-me__form {
   display: -webkit-box;
@@ -201,6 +215,7 @@ footer .footer__social-medias span {
 .about-me__right p {
   font-weight: 200;
   font-size: 2rem;
+  text-align: center;
 }
 
 .my-info-group {
@@ -391,6 +406,36 @@ footer .footer__social-medias span {
     -webkit-transform: rotateX(0deg);
             transform: rotateX(0deg);
   }
+}
+
+.contacts {
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.contacts h1 {
+  text-align: center;
+  margin-bottom: 120px;
+}
+.contacts__web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.contacts__web i {
+  font-size: 15rem;
+  color: #1f1c1c;
+}
+.contacts__web i:hover {
+  color: #c8a77b;
+  text-shadow: 1px 1px 2px black, 0 0 10px #1f1c1c;
 }
 
 html {
